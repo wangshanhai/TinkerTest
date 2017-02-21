@@ -6,7 +6,7 @@ def bakPath = file("${buildDir}/bakApk/")
  * 当准备打补丁包的时候，这里要填写基准包的目录
  * 此处并不是填写打基准包的目录
  */
-def baseApkDir = "app-0220-17-50-49"
+def baseApkDir = "app-0221-08-39-45"
 
 /**
  * 对于插件各参数的详细解析请参考
@@ -52,7 +52,7 @@ tinkerSupport {
  * https://github.com/Tencent/tinker/wiki/Tinker-%E6%8E%A5%E5%85%A5%E6%8C%87%E5%8D%97
  */
 tinkerPatch {
-    //oldApk ="${bakPath}/${baseApkDir}/app-release.apk"
+  //  oldApk ="${bakPath}/${baseApkDir}/app-release.apk"
     ignoreWarning = false
     useSign = true
     dex {
