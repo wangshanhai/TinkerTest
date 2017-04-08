@@ -105,11 +105,13 @@ tinkerSupport {
 
 }
 
+
 /**
  * 一般来说,我们无需对下面的参数做任何的修改
  * 对于各参数的详细介绍请参考:
  * https://github.com/Tencent/tinker/wiki/Tinker-%E6%8E%A5%E5%85%A5%E6%8C%87%E5%8D%97
  */
+ 
 tinkerPatch {
     //oldApk ="${bakPath}/${appName}/app-release.apk"
     ignoreWarning = false
