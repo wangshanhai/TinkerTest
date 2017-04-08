@@ -48,8 +48,8 @@ tinker-support 1.0.2 对应 tinker 1.7.5（需配置tinker插件的classpath）
 
 第二步：集成SDKgradle配置
 在app module的“build.gradle”文件中添加（示例配置）：
- dependencies {
 
+ dependencies {
           compile "com.android.support:multidex:1.0.1" // 多dex配置
           compile 'com.tencent.bugly:crashreport_upgrade:latest.release' // 升级SDK
 }
@@ -64,6 +64,7 @@ apply plugin: 'com.tencent.bugly.tinker-support'
 
 def bakPath = file("${buildDir}/bakApk/")
 
+
 /**
  * 此处填写每次构建生成的基准包目录
  */def baseApkDir = "app-0208-15-10-00"
@@ -71,6 +72,8 @@ def bakPath = file("${buildDir}/bakApk/")
 /**
  * 对于插件各参数的详细解析请参考
  */
+ 
+ 
 tinkerSupport {
 
     // 开启tinker-support插件，默认值true
